@@ -1,2 +1,60 @@
-# Obsidian-Pulse
-Obsidian Pulse es un tema oscuro premium diseñado para convertir DEX Studio en un entorno moderno, enfocado y visualmente poderoso. Combina profundidad, contraste equilibrado y acentos eléctricos sutiles para ofrecer una experiencia profesional sin fatiga visual.
+# Nebula Core
+
+🌑 Obsidian PulseObsidian Pulse es un tema oscuro premium diseñado para transformar DEX Studio en un entorno de desarrollo moderno, enfocado y con presencia profesional.No es un negro plano.No es un neon exagerado.Es profundidad, contraste inteligente y energía controlada.
+
+## Author
+GPT
+
+## Version
+1.0.0
+
+## Installation
+
+### From the Marketplace (recommended)
+1. Open DEX STUDIO
+2. Go to the Extensions Marketplace (puzzle icon in the sidebar)
+3. Search for "Nebula Core"
+4. Click "Install"
+
+### Manual installation
+1. Copy this folder to `~/.dex-studio/extensions/`
+2. Restart DEX STUDIO
+3. The extension will load automatically
+
+## Development
+
+### Project structure
+```
+studio.dex.nebula.core/
+├── manifest.json          # Extension metadata and configuration
+├── extension.dex.js       # Main extension code
+├── theme.css              # (Optional) UI theme stylesheet
+├── README.md              # This file
+└── GUIA-EXTENSIONES.md    # Development guide (Spanish)
+```
+
+### Key files
+- **manifest.json** — Defines id, name, version, category, icon, and color. Must have a unique `id` that matches the folder name.
+- **extension.dex.js** — Contains the `DEX.registerExtension()` call with config and handlers. Must end with `// Dex code successful`.
+- **theme.css** — (Optional) CSS variables for UI theme extensions. Only needed if `category` is `"theme"` or `type` is `"ui-theme"`.
+
+### DEX SDK quick reference
+```javascript
+DEX.showImageViewer(path)        // Open image viewer
+DEX.openPreviewTab(html)         // Open HTML preview tab
+DEX.hidePreview()                // Close preview tab
+DEX.currentLanguage              // Current file language
+DEX.showNotification(msg, type)  // Show toast: 'success' | 'error' | 'info'
+```
+
+### Events
+| Event         | Handler          | Description                    |
+|---------------|------------------|--------------------------------|
+| File opened   | `onFileOpen`     | Fires when a file is opened    |
+| File saved    | `onFileSave`     | Fires after a file is saved    |
+| File closed   | `onFileClose`    | Fires when a tab is closed     |
+| Project open  | `onProjectOpen`  | Fires when a project is opened |
+| Keystroke     | `onEditorInput`  | Fires on every editor input    |
+
+## License
+MIT
