@@ -1,0 +1,10 @@
+{
+    "id": "studio.dex.obsidian.pulse",
+    "name": "Obsidian Pulse",
+    "version": "1.0.0",
+    "description": "Obsidian Pulse es un tema oscuro premium diseñado para convertir DEX Studio en un entorno moderno, enfocado y visualmente poderoso. Combina profundidad, contraste equilibrado y acentos eléctricos sutiles para ofrecer una experiencia profesional sin fatiga visual.",
+    "author": "GPT",
+    "category": "theme",
+    "icon": "moon",
+    "color": "linear-gradient(135deg, #0f1117, #3a86ff)"
+}
